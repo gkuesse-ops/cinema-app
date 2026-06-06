@@ -1,0 +1,59 @@
+name: cinema_app
+description: Application de lecture multimédia locale avec pochettes de films et séries.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Accès aux fichiers médias du téléphone
+  photo_manager: ^3.0.0
+
+  # Lecteur vidéo
+  video_player: ^2.8.2
+  chewie: ^1.7.4
+
+  # Récupération des pochettes (TMDB API)
+  http: ^1.2.0
+  dio: ^5.4.0
+
+  # Base de données locale
+  sqflite: ^2.3.0
+  path: ^1.9.0
+
+  # Cache des images
+  cached_network_image: ^3.3.1
+
+  # Gestion d'état
+  provider: ^6.1.2
+
+  # Permissions
+  permission_handler: ^11.3.0
+
+  # UI & animations
+  flutter_staggered_animations: ^1.1.1
+  shimmer: ^3.0.0
+  lottie: ^3.1.0
+
+  # Infos sur les fichiers vidéo (durée, résolution)
+  ffmpeg_kit_flutter: ^6.0.3
+
+  # Stockage local des préférences
+  shared_preferences: ^2.2.2
+
+  # Icônes
+  flutter_svg: ^2.0.10+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
